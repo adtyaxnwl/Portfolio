@@ -1,0 +1,149 @@
+.skills {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 80px 48px;
+}
+
+.skills-section {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-bottom: 72px;
+  padding-bottom: 72px;
+  border-bottom: 1px solid var(--border);
+}
+
+.skill-group {}
+
+.skill-category {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 14px;
+}
+
+.skill-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skill-chip {
+  padding: 6px 16px;
+  border: 1px solid var(--border);
+  font-size: 0.85rem;
+  color: var(--dark);
+  background: var(--off-white);
+  transition: all var(--transition);
+}
+
+.skill-chip:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: var(--accent-light);
+}
+
+/* Users */
+.users-section {}
+
+.users-header {
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.users-title {
+  font-size: 1.6rem;
+  color: var(--dark);
+}
+
+.users-source {
+  font-size: 0.75rem;
+  color: var(--muted);
+  font-family: 'Courier New', monospace;
+}
+
+.users-loading, .users-error {
+  color: var(--muted);
+  font-size: 0.88rem;
+  padding: 20px 0;
+}
+
+.users-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1px;
+  background: var(--border);
+  border: 1px solid var(--border);
+}
+
+.user-card {
+  background: var(--white);
+  padding: 20px 24px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  transition: background var(--transition);
+}
+
+.user-card:hover {
+  background: var(--off-white);
+}
+
+.user-avatar {
+  width: 36px;
+  height: 36px;
+  background: var(--accent-light);
+  color: var(--accent);
+  font-family: 'DM Serif Display', serif;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border-radius: 50%;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.user-name {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--dark);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.user-email {
+  font-size: 0.78rem;
+  color: var(--muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.user-company {
+  font-size: 0.72rem;
+  color: var(--accent);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+@media (max-width: 600px) {
+  .skills {
+    padding: 48px 20px;
+  }
+  .users-grid {
+    grid-template-columns: 1fr;
+  }
+}

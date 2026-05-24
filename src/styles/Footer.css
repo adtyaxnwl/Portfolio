@@ -1,0 +1,23 @@
+.footer {
+  border-top: 1px solid var(--border);
+  padding: 24px 48px;
+  background: var(--white);
+}
+
+.footer-inner {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+
+.footer-name {
+  font-family: 'DM Serif Display', serif;
+  color: var(--dark);
+  font-size: 0.9rem;
+}
+
+.footer-divider {
+  opacity: 0.4;
+}
